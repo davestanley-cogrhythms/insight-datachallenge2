@@ -1,0 +1,19 @@
+
+# Change to postgres user
+sudo -i -u postgres
+
+# From terminal
+createdb yammer_db -U postgres
+psql yammer_db
+
+# From within psql
+CREATE USER davestanley SUPERUSER PASSWORD coco;
+\q
+#Exit out of PSQL (\q)
+
+#  Test logging in through this user. From terminal
+psql yammer_db -h localhost -U davestanley
+
+# From psql
+\c (once in PSQL to check how you're logged in)
+\q
