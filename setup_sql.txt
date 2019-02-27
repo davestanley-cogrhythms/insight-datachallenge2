@@ -7,7 +7,7 @@ createdb yammer_db -U postgres
 psql yammer_db
 
 # From within psql
-CREATE USER davestanley SUPERUSER PASSWORD coco;
+CREATE USER davestanley SUPERUSER PASSWORD 'coco';
 \q
 #Exit out of PSQL (\q)
 
@@ -17,3 +17,7 @@ psql yammer_db -h localhost -U davestanley
 # From psql
 \c (once in PSQL to check how you're logged in)
 \q
+
+
+# To delete database, from terminal:
+dropdb yammer_db
