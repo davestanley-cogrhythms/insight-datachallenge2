@@ -1,4 +1,14 @@
 
+
+=================
+Install Postgres
+=================
+Go to http://postgresapp.com/, download and install postgres, and then add it to your path.
+
+=============================
+Set up the yammer database 
+=============================
+
 # Change to postgres user
 sudo -i -u postgres
 
@@ -21,3 +31,5 @@ psql yammer_db -h localhost -U davestanley
 
 # To delete database, from terminal:
 dropdb yammer_db
+
+
