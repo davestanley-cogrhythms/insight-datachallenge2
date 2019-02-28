@@ -5,6 +5,15 @@ Install Postgres
 =================
 Go to http://postgresapp.com/, download and install postgres, and then add it to your path.
 
+
+
+=================
+Install sqlalchemy
+=================
+
+$ pip install sqlalchemy_utils 
+$ conda install psycopg2 -y
+
 =============================
 Set up the yammer database 
 =============================
